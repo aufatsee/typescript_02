@@ -11,5 +11,3 @@ app.get("/", (_req: Request, res: Response) => {
 app.listen(app.get("port"), () => {
   console.log(`Server on http://localhost:${app.get("port")}/`);
 });
-
-export * as rpc from "./json_rpc";
