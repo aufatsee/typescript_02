@@ -13,4 +13,5 @@ app.listen(app.get("port"), () => {
 });
 
 export * as rpc from "./json_rpc";
-export * as browserFile from "./browserFile";
+export * from "./browser_file";
+export * from "./browser_file_object";
