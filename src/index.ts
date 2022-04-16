@@ -1,6 +1,5 @@
 import express, { Application, Request, Response } from "express";
 
-
 const app: Application = express();
 
 app.set("port", process.env.PORT || 3000);
@@ -12,3 +11,5 @@ app.get("/", (_req: Request, res: Response) => {
 app.listen(app.get("port"), () => {
   console.log(`Server on http://localhost:${app.get("port")}/`);
 });
+
+export * as rpc from "./json_rpc";
