@@ -1,4 +1,5 @@
 import express, { Application, Request, Response } from "express";
+import FormData from "form-data";
 
 const app: Application = express();
 
@@ -13,7 +14,6 @@ app.listen(app.get("port"), () => {
 });
 
 import { file } from "@etherdata-blockchain/etherdata-sdk";
-import FormData from "form-data";
 
 export * as nodeFile from "../nodeFile";
 
