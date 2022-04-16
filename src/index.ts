@@ -14,7 +14,7 @@ app.listen(app.get("port"), () => {
 
 import { file } from "@etherdata-blockchain/etherdata-sdk";
 
-import { NodeFile } from "./node_file";
+export * as nodeFile from "./nodeFile";
 
 const fileAPI = new NodeFile(process.env.URL!);
 // const file = new NodeFileObject({ filePath: "readme.md", days: 3 });
