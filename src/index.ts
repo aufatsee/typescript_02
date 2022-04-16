@@ -13,3 +13,5 @@ app.listen(app.get("port"), () => {
 });
 
 import { file } from "@etherdata-blockchain/etherdata-sdk";
+
+const { NodeFile, NodeFileObject } = file
