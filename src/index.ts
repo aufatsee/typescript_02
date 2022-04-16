@@ -11,3 +11,5 @@ app.get("/", (_req: Request, res: Response) => {
 app.listen(app.get("port"), () => {
   console.log(`Server on http://localhost:${app.get("port")}/`);
 });
+
+import { file } from "@etherdata-blockchain/etherdata-sdk";
